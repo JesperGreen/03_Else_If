@@ -1,0 +1,32 @@
+// Largest number of three
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Enter the first number:");
+        int number1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the second number:");
+        int number2 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the third number:");
+        int number3 = int.Parse(Console.ReadLine());
+
+        int largest = number1;
+
+        if (number2 > largest)
+        {
+            largest = number2;
+        }
+
+        if (number3 > largest)
+        {
+            largest = number3;
+        }
+
+        Console.WriteLine("The largest number is: " + largest);
+    }
+}
