@@ -1,1 +1,22 @@
+// Predefined_PW
 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string predefinedPassword = "CSharp123";
+        Console.WriteLine("Please enter the password:");
+        string userInput = Console.ReadLine();
+
+        if (userInput == predefinedPassword)
+        {
+            Console.WriteLine("Access granted");
+        }
+        else
+        {
+            Console.WriteLine("Access denied");
+        }
+    }
+}
