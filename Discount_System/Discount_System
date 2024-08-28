@@ -6,17 +6,13 @@ class Program
 {
     static void Main()
     {
-        // Prompt the user to enter a number
         Console.WriteLine("Enter a number:");
         double number = double.Parse(Console.ReadLine());
 
-        // Check if the number is above 1000 and apply a 10% reduction if it is
         if (number > 1000)
         {
             number -= number * 0.10; // Reduce by 10%
         }
-
-        // Output the final number
         Console.WriteLine("The final amount is: " + number);
     }
 }
